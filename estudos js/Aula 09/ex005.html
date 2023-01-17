@@ -17,9 +17,15 @@
     <h1>Estudos DOM</h1>
     <p>Aprendendo a usar <strong>DOM</strong> em Js</p>
     <p>Aqui vai o resultado</p>
-    <div>Clique Aqui! </div>
+    <div id="msg">Clique Aqui! </div>
     <script>
-
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        var d = window.document.getElementById('msg')
+        // d.style.background = 'green'
+        // d.innerText = 'Estou no aguardo...'
+        var d = window.document.querySelector('div#msg')
+        d.style.color = 'blue'
     </script>
 </body>
 </html>
