@@ -30,18 +30,20 @@ footer {
 .bloco {
     position: absolute;
     bottom: 26%;
-    left: 37%; 
+    left: 38%; 
 }
 
 .container {
     background-color: #3E5902;
 
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
 
 
     border-radius: 20px;
     box-shadow: 1px 2px 10px black;
+
+    padding: 7px 7px 7px 7px;
 }
 
 .titulo {
