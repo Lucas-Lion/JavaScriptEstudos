@@ -26,7 +26,7 @@
         function mostrar() {
             var txt = document.querySelector('input#txtp').value.toUpperCase()
             var res = document.querySelector('div#res')
-            res.innerHTML = `<p>Seu país de origem é o ${txt}!</p>`
+            res.innerHTML = `<p>Seu país de origem é ${txt}!</p>`
             if (txt == 'BRASIL') {
                 res.innerHTML += `<p>Você é brasileiro!</p>`
             } else { 

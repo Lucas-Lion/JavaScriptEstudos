@@ -15,55 +15,83 @@ header {
     background-color: #05060A;
     color: #F3F3F3;
 
-    padding: 10px 0px 10px 0px;
-    margin-bottom: 20px;
-    height: 50px;
+    height: 10vh;
 
-    font-size: 1.3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 footer {
     background-color: #05060A;
     color: #F3F3F3;
 
-    position: absolute;
-    bottom: 0%;
+    font-size: 1.2em;
+    height: 40px;
 
-    padding-top: 10px;
-
-    width: 100vw;
-    height: 3%;
-
-    font-size: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-.bloco {
-    position: absolute;
-    bottom: 30%;
-    right: 40%;
+p {
+    font-size: 1.5em;
+}
 
+
+.bloco {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
     background-color: #F3CD65;
-    width: 300px;
-    height: 300px;
+    width: 450px;
+    height: 450px;
 
     border-radius: 30px;
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.534);
+
+    padding: 7px 7px 7px 7px;
 }
 
 #titulo-2 {
-    padding-top: 20px;
-    margin: 0px 0px 10px 0px;
+    padding: 50px 0px 20px 0px;
+    font-size: 2.2em;
 }
 
 .legenda {
     margin: 0px 0px 9px 0px;
 }
 
-input {
+#verificar {
     width: 100px;
     height: 30px;
-    margin: 0px 0px 20px 0px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: black;
+}
+
+#txtvel {
+    height: 30px;
+    font-size: 1.5em;
+    color: black;
+
+    margin-bottom: 10px;
+}
+
+#res {
+    padding: 40px 0px 0px 0px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
 }
