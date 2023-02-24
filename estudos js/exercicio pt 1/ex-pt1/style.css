@@ -30,10 +30,6 @@ section {
     margin: 15px 0px 15px 10px;
 }
 
-#legenda {
-    margin: 0px 0px 0px 10px;
-}
-
 #ano {
     width: 20%;
     height: 25px;
@@ -42,7 +38,7 @@ section {
     border-radius: 10px;
 }
 
-button {
+#botao {
     display: block;
     margin: auto;
 
@@ -58,7 +54,7 @@ button {
     font-size: 1.1em;
 }
 
-button:hover {
+#botao:hover {
     background-color: #024b4b;
     cursor: pointer;
 }
