@@ -26,3 +26,39 @@ section {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.349);
 }
 
+.conteudo {
+    margin: 15px 0px 15px 10px;
+}
+
+#legenda {
+    margin: 0px 0px 0px 10px;
+}
+
+#ano {
+    width: 20%;
+    height: 25px;
+
+    border: 1px solid rgba(97, 97, 97, 0.601);
+    border-radius: 10px;
+}
+
+button {
+    display: block;
+    margin: auto;
+
+    width: 20%;
+    height: 30px;
+
+    border: none;
+    border-radius: 10px;
+    
+    background-color: #043030;
+    color: white;
+
+    font-size: 1.1em;
+}
+
+button:hover {
+    background-color: #024b4b;
+    cursor: pointer;
+}

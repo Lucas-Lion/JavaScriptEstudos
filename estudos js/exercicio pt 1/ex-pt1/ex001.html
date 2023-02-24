@@ -7,18 +7,24 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="relogio.ico" type="image/x-icon">
     <script src="script.js"></script>
-    <title>Relógio</title>
+    <title>Verificador de Idade</title>
 </head>
 <body>
     <header>
-        <h1>Hora do dia</h1>
+        <h1>Verificador de Idade</h1>
     </header>
     <section>
-        <div>
-            teste
+        <div class="conteudo">
+            <label for="ano">Ano de Nascimento: <input type="number" name="ano" id="ano"></label> <br> <br>
+            <label for=""> Sexo:
+                <input type="radio" name="sexo" id="imas"> <label for="imas">Masculino</label>
+                <input type="radio" name="sexo" id="ifem"> <label for="ifem">Feminino</label>
+            </label> <br> <br>
+            <button>Verificar</button>
         </div>
+        <p id="legenda">Preencha os dados acima para obter o resultado!</p>
         <div>
-            olá
+           
         </div>
     </section>
     <footer><p> &copy; Desenvolvido por Lucas Lion</p></footer>
