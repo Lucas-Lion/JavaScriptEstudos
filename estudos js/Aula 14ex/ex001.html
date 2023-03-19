@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="relogio.ico" type="image/x-icon">
+    <script src="script.js"></script>
+    <title>Verificador de Idade</title>
+</head>
+<body> 
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div class="conteudo">
+            <label for="ano">Ano de Nascimento: <input type="number" name="ano" id="ano"></label> <br> <br>
+            <label for=""> Sexo:
+                <input type="radio" name="sexo" id="imas" checked> <label for="imas">Masculino</label>
+                <input type="radio" name="sexo" id="ifem"> <label for="ifem">Feminino</label>
+            </label> <br> <br>
+            <input id="botao" type="button" value="Verificar" onclick="verificar()">
+        </div>
+        
+        <div id="res">
+            Preencha os dados acima para obter o resultado!
+        </div>
+    </section>
+    <footer><p> &copy; Desenvolvido por Lucas Lion</p></footer>
+</body>
+</html>
