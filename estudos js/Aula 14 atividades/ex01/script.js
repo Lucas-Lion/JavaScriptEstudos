@@ -16,13 +16,11 @@ function contar() {
         res.innerHTML = 'Contando: <br>' //Se não for vazio ele irá exibir a mensagem "Contando:".
 
         //transformando os valores adicionados em numéricos
-        
         let i = Number(inicio.value) 
         let f = Number(fim.value)   
         let p = Number(passo.value)
 
         // Se o valor de 'p' for igual ou menor que 0, ele irá exibir uma mensagem de error e alterar o valor para 1
-
         if(p <= 0) {
             window.alert('ERROR! Valor não permitido, seu valor será alterado para 1')
             p = 1
