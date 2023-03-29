@@ -10,19 +10,30 @@
     <title>Verificador de Idade</title>
 </head>
 <body> 
+    
     <header>
         <h1>Verificador de Idade</h1>
     </header>
+
     <section>
         <div class="conteudo">
-            
-            <input id="botao" type="button" value="Verificar" onclick="verificar()">
-        </div>
-        
-        <div id="res">
-            
+
+            <div id="val">
+                <label for="valor">Valor:</label>
+                <input type="number" name="valor" id="valor">
+                <input id="botao" type="button" value="Verificar" onclick="gerar()">
+            </div>
+            <br>
+            <div>
+                <select name="tabuada" id="itabuada" size="10">
+                </select>
+            </div>
+
         </div>
     </section>
-    <footer><p> &copy; Desenvolvido por Lucas Lion</p></footer>
+
+    <footer>
+        <p>Desenvolvido por Lucas Lion &copy; Copyright</p>
+    </footer>
 </body>
 </html>

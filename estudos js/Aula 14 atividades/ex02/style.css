@@ -30,31 +30,26 @@ section {
     margin: 15px 0px 15px 10px;
 }
 
-#ano {
-    width: 20%;
-    height: 25px;
+#valor {
+    margin: 0 10px;
+}
 
-    border: 1px solid rgba(97, 97, 97, 0.601);
-    border-radius: 10px;
+#val {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #botao {
-    display: block;
-    margin: auto;
-
-    width: 20%;
-    height: 30px;
-
-    border: none;
-    border-radius: 10px;
-    
-    background-color: #043030;
+    background-color: #10403B;
     color: white;
-
-    font-size: 1.1em;
+    cursor: pointer;
 }
 
 #botao:hover {
-    background-color: #024b4b;
-    cursor: pointer;
+    background-color: #0a2c29;
+}
+
+label {
+    font-weight: bold;
 }

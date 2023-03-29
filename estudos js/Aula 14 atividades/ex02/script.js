@@ -1,51 +1,31 @@
-function verificar() {
-    var data = new Date()
-    var ano = data.getFullYear()
-    var fano = document.getElementById('ano')
-    var res = document.querySelector('div#res')
-    if (fano.value.length == 0 || fano.value > ano) {
-        window.alert('Verifique o ano e tente novamente!')
-    } else {
-        var ifem = document.getElementsByName('sexo')
-        var idade = ano - Number(fano.value)
-        var genero = ''
-        var img = document.createElement('img')
-        img.setAttribute('id','foto')
+function gerar() { // Função executada ao clicar para verificar a tabuada
 
-        if (ifem[0].checked) {
-            genero = 'Homem'
-            if(idade >= 0 && idade < 10) {
-                // Child
-                img.setAttribute('src', 'imagens/bebe-menino.png')
-            } else if (idade <21) {
-                // Young
-                img.setAttribute('src', 'imagens/jovem-homem.png')
-            } else if (idade < 50) {
-                // Adult
-                img.setAttribute('src', 'imagens/adulto.png')
-            } else {
-                // idoso
-                img.setAttribute('src', 'imagens/idoso.png')
-            }
-            
-        } else if (ifem[1].checked) {
-            genero = 'Mulher'
-            if(idade >= 0 && idade < 10) {
-                // Child
-                img.setAttribute('src', 'imagens/bebe-menina.png')
-            } else if (idade <21) {
-                // Young
-                img.setAttribute('src', 'imagens/jovem-mulher.png')
-            } else if (idade < 50) {
-                // Adult
-                img.setAttribute('src', 'imagens/adulta.png')
-            } else {
-                // idoso
-                img.setAttribute('src', 'imagens/idosa.png')
-            }
+    // Ceclaração de variáveis
+    var valor     = document.getElementById('valor')
+    var resultado = document.getElementById('itabuada')
+   
+    if (valor.value.length == 0) { // Emite uma mensagem de error caso não seja adicionado nenhum valor no input
+        
+        window.alert('[ERROR]')
+
+        resultado.innerHTML = '<br> <strong> Por favor, digite um número </strong>'
+
+    } 
+    
+    else { // Faz a multiplicação do valor digitado e a var i
+
+        var v = Number(valor.value)
+
+        for (var i = 1; i <= 10; i++) {
+
+            var item = document.createElement('option')
+
+            item.text = `${v} x ${i} = ${v*i}`
+
+            resultado.appendChild(item)
         } 
-        res.style.textAlign = 'Center'
-        res.innerHTML = `<p>Detectamos: ${genero} de ${idade} anos.</p>`
-        res.appendChild(img)
+        
     }
+
+    
 }
