@@ -16,12 +16,13 @@ function gerar() { // Função executada ao clicar para verificar a tabuada
 
         var v = Number(valor.value)
 
+        resultado.innerHTML = ''
         for (var i = 1; i <= 10; i++) {
 
             var item = document.createElement('option')
 
             item.text = `${v} x ${i} = ${v*i}`
-
+            item.value = `resultado${i}`
             resultado.appendChild(item)
         } 
         
