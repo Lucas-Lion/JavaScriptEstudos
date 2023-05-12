@@ -11,7 +11,7 @@ const tarantinoMovies = [
     { name: 'Kill Bill: Volume 1', release: 2003 }
   ]
 
-const movieBefore2000 = tarantinoMovies.map (movie => {
+let movieBefore2000 = tarantinoMovies.map (movie => {
     if (movie.release < 2000) {
         return {
             name: movie.name
