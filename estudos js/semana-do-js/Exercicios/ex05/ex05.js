@@ -6,8 +6,8 @@ const tvShows = [
     { name: 'The Handmaid\'s Tale', releaseYear: 2017 },
     { name: 'House M.D.', releaseYear: 2004 },
     { name: 'Watchmen', releaseYear: 2019 }
-  ]
+  ] 
 
-const tvShowsName = tvShows.map(show => show.name)
+const tvShowsName = tvShows.map(({name}) => name)
 
 console.log(tvShowsName)
